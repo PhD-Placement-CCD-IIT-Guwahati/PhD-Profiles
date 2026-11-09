@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhD Talent Directory – Centre for Career Development, IIT Guwahati</title>
+<meta name="description" content="Browse PhD scholars from IIT Guwahati by discipline, research keywords or name. Partner with the Centre for Career Development for PhD recruitment and MoUs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#directory">Skip to the directory</a>
+
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="brand" href="./">
+      <img src="logo.png" alt="" class="brand-logo" onerror="this.remove()">
+      <span class="brand-text"><strong>PhD Talent Directory</strong><span>IIT Guwahati</span></span>
+    </a>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="#directory">Browse scholars</a>
+      <a href="#partner">Partner with us</a>
+    </nav>
+  </div>
+  <div class="wrap hero">
+    <div class="hero-main">
+      <p class="institute"><strong>Centre for Career Development</strong><span>Indian Institute of Technology Guwahati</span></p>
+      <h1>Your one-stop destination for PhD talent.</h1>
+      <p class="tagline">Where deep tech meets deep talent.</p>
+      <ul class="figures">
+        <li><strong id="fig-scholars">220+</strong><span>PhD scholars</span></li>
+        <li><strong id="fig-disciplines">14</strong><span>disciplines</span></li>
+        <li><strong>1</strong><span>single window for PhD hiring</span></li>
+      </ul>
+      <div class="pilot">
+        <p><strong>The 2-PhD Pilot:</strong> start with just two research interns or two PhD hires this season. Prove the value, then make it annual.</p>
+      </div>
+      <p class="stats" id="stats" aria-live="polite">Loading scholars…</p>
+    </div>
+    <aside class="contact-panel" aria-labelledby="partner-title">
+      <h2 id="partner-title">Partner with us</h2>
+      <p class="for">For companies and academic institutions: PhD recruitment, research internships and MoUs for PhD hiring.</p>
+      <ul class="emails" id="partner-emails"></ul>
+      <a class="site" id="centre-web-top" href="https://www.iitg.ac.in/ccd">www.iitg.ac.in/ccd</a>
+      <h3>PhD Placement Coordinators</h3>
+      <ul class="coordinators" id="coordinators-top"></ul>
+    </aside>
+  </div>
+  <div class="wrap">
+    <ol class="steps" aria-label="How to hire PhD scholars">
+      <li><span>1</span>Call or email us</li>
+      <li><span>2</span>Share requirements</li>
+      <li><span>3</span>Get curated profiles</li>
+      <li><span>4</span>Interview and hire</li>
+    </ol>
+  </div>
+</header>
+
+<main id="directory" class="wrap">
+  <section class="finder" aria-label="Search the directory">
+    <div class="field field-search">
+      <label for="q">Search</label>
+      <input id="q" type="search" autocomplete="off" placeholder="Name, keyword, thesis topic, email or phone">
+    </div>
+    <div class="field">
+      <label for="discipline">Discipline</label>
+      <select id="discipline"><option value="">All disciplines</option></select>
+    </div>
+    <button type="button" class="btn-quiet" id="reset">Clear</button>
+  </section>
+
+  <p class="result-count" id="count" aria-live="polite"></p>
+  <ol class="profiles" id="profiles"></ol>
+  <div class="empty" id="empty" hidden></div>
+</main>
+
+<section id="partner" class="partner">
+  <div class="wrap partner-grid">
+    <div>
+      <h2>Partner with IIT Guwahati for PhD recruitment</h2>
+      <p>The Centre for Career Development is your single window to PhD talent across all departments. We work with companies and institutions on:</p>
+      <ul class="offers">
+        <li><strong>PhD recruitment.</strong> Full-time roles, research internships and the 2-PhD Pilot: two research interns or two PhD hires in a season.</li>
+        <li><strong>MoUs for PhD hiring.</strong> A long-term agreement for regular PhD intake, internships and joint research with IIT Guwahati.</li>
+      </ul>
+      <p class="partner-mail">Write to <a id="centre-email" href="mailto:placement@iitg.ac.in">placement@iitg.ac.in</a> or visit <a id="centre-web" href="https://www.iitg.ac.in/ccd">www.iitg.ac.in/ccd</a>.</p>
+    </div>
+    <div>
+      <h3>PhD Placement Coordinators</h3>
+      <ul class="coordinators" id="coordinators"></ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Centre for Career Development, Indian Institute of Technology Guwahati, Guwahati, Assam 781039, India.</p>
+    <p>Profiles are shared with each scholar’s consent for recruitment purposes only.</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
